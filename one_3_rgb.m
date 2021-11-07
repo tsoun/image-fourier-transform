@@ -1,5 +1,6 @@
-function one_3_rgb()
-    files = dir('*.png');           %φόρτωση όλων των εικόνων στο τρέχον ευρετήριο
+function one_3_rgb()                %βεβαιωθείτε πως το τρέχον αρχείο έχει το ίδιο όνομα με την συνάρτηση one_3_rgb
+                                    %φόρτωση όλων των εικόνων στο τρέχον ευρετήριο
+    files = dir('*.png');           
     for i = 1:numel(files)
       figure();
       filename = files(i).name;
